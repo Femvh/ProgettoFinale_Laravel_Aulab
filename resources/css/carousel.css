@@ -1,0 +1,25 @@
+.carouselcontainer{
+    height:500px;
+}
+
+.carouselinner{
+    overflow:hidden;
+    height:500px;
+}
+
+
+.carouselcontent{
+    
+    position: absolute;
+    bottom: 20px; /* Puoi regolare la posizione verticale della scritta */
+    left: 50%;
+    transform: translateX(-50%); /* Centra la scritta orizzontalmente */
+    color: white; /* Colore del testo nero */
+    font-size: 2rem; /* Modifica la dimensione del testo come desiderato */
+    padding: 10px 20px; /* Aggiungi padding per distanziare la scritta dai bordi */
+    background-color: rgba(0, 0, 0, 0.7); /* Sfondo semi-trasparente nero */
+    border-radius: 5px; /* Facoltativo: arrotonda gli angoli */
+    text-align: center;
+    z-index: 2; /* Assicurati che la scritta sia sopra l'immagine */
+}
+

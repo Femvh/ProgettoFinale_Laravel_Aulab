@@ -1,0 +1,102 @@
+/* Navbar */
+
+/* dropdrow Scopri le categorie  */
+.glass-dropdown{
+    background-color: rgb(29, 53, 63,0.7);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px); /* compatibilità Safari */
+    border-radius: 12px;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-dropdown .dropdown-item {
+    color: white;
+    border: none;
+}
+
+.glass-dropdown .dropdown-item:hover {
+    background-color: transparent;
+    color: var(--primary-accent-green);
+    border: none;
+    
+}
+/* end dropdrow Scopri le categorie  */
+
+
+/* navbar general position + color*/
+.custom-navbar {
+    background: linear-gradient(90deg,rgb(29, 53, 63) 20%, rgb(14, 76, 97) 60%, hsl(293, 37%, 60%) 100%);
+    position: sticky;
+    padding: 10px 20px;
+    width: 100vw;
+    z-index: 10;
+    top: 0px;
+    transition: background 0.3s ease-in-out;
+}
+
+
+/* first section - image + name brand */
+.navbar-brand{
+    padding-right: 15px;
+    border-right: 1px solid var(--primary-accent-green); 
+}
+.navbar-brand img {
+    transition: transform 0.5s ease;
+}
+.navbar-brand img:hover {
+    transform: scale(1.5);
+    
+}
+/* end first section - image + name brand */
+
+
+
+/* underline UL-items left side  */
+.nav-item :hover{
+    border-bottom: 1px solid var(--primary-accent-green);
+    transition-delay: 0.2s;
+}
+
+/* Barra di ricerca */
+
+.custom-sec-acc-green{
+    color: var(--primary-accent-green);
+}
+/* Fine barra di ricerca */
+
+
+
+/* Responsive */
+@media (max-width: 992px) {
+    .auth-buttons {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .auth-buttons a,
+    .auth-buttons form {
+        width: auto;
+        text-align: center;
+        margin-top: 10px;
+         /* Spaziatura tra Login, Register e Logout */
+    }
+
+    .logout-button {
+        margin-top: 10px;
+    }
+
+    /* Barra di ricerca 100% dentro l’hamburger */
+    .search-form {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+}
+
+
+

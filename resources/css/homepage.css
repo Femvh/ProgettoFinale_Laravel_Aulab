@@ -1,0 +1,248 @@
+/* Homepage */
+
+    /*Image Section */
+    .homepage-custom-img {
+        position: relative;
+        height: 60vh;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .homepage-custom-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-right: 4px solid var(--primary-accent-green);
+        border-bottom: 4px solid var(--primary-accent-green);
+    }
+
+    /* position text */
+    .homepage-text {
+        position: absolute;
+        top: 33%;
+        left: 8%;
+        color: white;
+        width: 38%;
+        max-width: 600px;
+        max-height: 80vh;
+        text-align: left;
+    }
+    .homepage-text h1 {
+        font-size: 2.0rem;
+        font-weight: bold;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        margin-bottom: 20px;
+
+    }
+
+    .highlight-home {
+        position: relative;
+        display: inline-block;
+        z-index: 1;
+        color: #fff; /* colore del testo */
+        padding: 0px 15px 5px 15px;
+        border-radius: 35px;
+        font-weight: bold;
+    }
+
+    .highlight-home::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 35px;
+        background-color: var(--primary-dark);
+        opacity: 0.6; /* trasparenza per far emergere il blur */
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px); /* per Safari */
+        z-index: -1;
+    }
+
+    /* Button */
+    .welcome-btn {
+        color: var(--primary-accent-green);
+        display: inline-block;
+        padding: 8px 24px;
+        font-size: 16px;
+        font-weight: bold;
+        border: 2px solid var(--primary-accent-green);
+        border-radius: 31px;
+        background-color: transparent;
+        text-decoration: none;
+        transition: color 0.4s ease;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+    .welcome-btn::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: yellow;
+        z-index: 0;
+        transition: width 0.6s ease;
+    }
+    .welcome-btn:hover::before {
+        width: 100%;
+        z-index: -1;
+    }
+    .welcome-btn:hover {
+        color: var(--primary-dark);
+    }
+
+
+/*Homepage - ultimi 6 articoli*/
+    .homepage-custom-title{
+        color: white;
+        border-top: 4px solid var(--primary-accent-green);
+        width: 100vw;
+    }
+    .homepage-custom-btn{
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+        border: none;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Articles card position + dimensions */
+.product-card-custom {
+    width: 250px;
+    height: 400px;
+    border: 1px solid var(--secondary-light-green);
+    border-radius: 36px;
+    overflow: hidden;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.6);
+    position: relative;
+}
+
+/*card-homepage: image of product card*/
+.card-image-custom img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.3s ease;
+}
+.card-image-custom:hover img {
+    transform: scale(1.2);
+}
+/*card-homepage: Hover pop-up bar with description of article*/
+.info-card-custom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 0.9rem;
+
+    color: var(--primary-dark);
+    background-color:rgb(255,255,255,0.6) ;
+    border-top: 1px solid var(--primary-accent-green);
+    width: 100%;
+    height: 40%;
+
+}
+
+.info-card-custom span{
+    position: absolute;
+    padding: 6px 12px;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+    border: 1px solid white;
+    background: var(--primary-accent-green);
+    top: 0;
+    right: 0;
+}
+
+
+/*card-homepage: position -default plus-icon button*/
+.card-content-custom {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-90%);
+    text-align: center;
+    background-color: transparent;
+    z-index: 1;
+}
+/*card-homepage button plus icon - style*/
+.card-cta-modal-button {
+    background-color: transparent;
+    color: var(--primary-accent-green);
+    padding: 1px 0px 0px 8px ;
+    border: 2px solid var(--primary-accent-green);
+    border-radius: 21px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-left: 7px;
+    transition: all 0.3s;
+    font-size: 1em;
+    position: relative;
+    overflow: hidden;
+}
+
+/* card-homepage button hover position */
+.card-cta-modal-button:hover {
+    background-color: var(--primary-accent-green);
+    transform: translateX(30%);
+    padding: 5px 15px;
+}
+.card-cta-modal-button-text {
+    font-size: 1em; /* the + icon size */
+    margin-right: 9px;
+    transition: opacity 0.3 ease;
+}
+
+/*card-homepage Expand button on hover*/
+.card-cta-modal-button-text-hover {
+    display: none;
+    font-size: 1em;
+    font-weight: bold;
+    transition: opacity 0.7 ease;
+}
+/* card-homepage: Hide the plus-icon and show text dettagli when hovering */
+    .card-cta-modal-button:hover .card-cta-modal-button-text {
+        display: none;
+    }
+
+    .card-cta-modal-button:hover .card-cta-modal-button-text-hover {
+        display: inline-block;
+        opacity: 1;
+    }
+
+/*end cards homepage*/
+
+/* Responsiveness homepage */
+@media (max-width: 767px) {
+    .homepage-text {
+        width: 50%;
+    }
+
+    .homepage-text h1 {
+        font-size: 1.6rem;
+        max-width: 100%;
+    }s
+
+    .welcome-btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+/*end homepage */

@@ -1,0 +1,30 @@
+.contact-card {
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    width: 1200px;
+    height: auto;
+} 
+
+.contact-description{
+    background-image: url(/public/logo/logo\ [Converted].png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;}
+    
+.form-control, .btn-primary {
+    background: rgba(250, 250, 250, 0.998);
+    border: none;
+    color: rgb(5, 5, 5);
+}
+.form-control::placeholder {
+    background-color: rgb(255, 255, 255);
+    color: rgb(5, 5, 5);
+}
+.btn-primary:hover {
+    background: rgba(255, 255, 255, 0.4);
+} 
+.form-colon{
+    background: linear-gradient(to left, var(--primary-dark), var(--secondary-dark))
+    
+} 

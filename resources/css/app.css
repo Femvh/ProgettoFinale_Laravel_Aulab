@@ -1,0 +1,63 @@
+@import 'bootstrap';
+@import 'bootstrap-icons';
+@import './footer.css';
+@import './homepage.css';
+@import './navbar.css';
+@import './loginAndRegisterForm.css';
+@import './viewArticleCard.css';
+@import './createNewArticle.css';
+@import './carousel.css';
+@import './index.css';
+@import './contact.css';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+@import './revisor.css';
+
+    :root{
+        --primary-dark: rgb(29, 53, 63);            /*Te Papa Green*/
+        --secondary-dark: rgb(14, 76, 97);          /*Deep Sea Green*/
+        --dark-blue:#0f807a;                /*surfie green*/ 
+        
+        --primary-accent-green:#d8ec2b;     /*pear*/
+    
+        --primary-light-green: #ceedb2;     /*green tea*/ 
+        --secondary-light-green:#e3f8cf;    /*Feta*/ 
+
+        --light-color: rgb(228, 233, 233);     /*frosty*/
+        --light-color-blue: rgb(179, 207, 205);/*misty*/
+        --light-color-purple: rgb(208, 166, 212); 
+    }
+    
+    
+.nunito-font> {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    }
+
+    body {
+    background: rgb(228,233,233);
+    background: radial-gradient(circle, rgba(228,233,233,1) 48%, rgba(179,207,205,1) 100%);
+}
+
+
+
+    .text-color-about-us{
+        color: var(--dark-blue);
+    }
+
+    .text-color-light-blue{
+        color: var(--light-color-blue);
+    }
+
+    .text-color-light-purple{
+        color: var(--light-color-purple);
+    }
+
+    .bg-color-primary-dark{
+        background-color: var(--primary-dark);
+    }
+
+    .text-color-primary-dark{
+        color: var(--primary-dark);
+    }

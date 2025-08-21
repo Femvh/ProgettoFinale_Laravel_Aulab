@@ -1,0 +1,101 @@
+/* form-login -- form-registrazione*/
+
+
+/* contenitore principale */
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Layout orizzontale tra sidebar e form */
+.login-content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    
+}
+
+.custom-border-purple{
+    border-right: 1px solid var(--light-color-purple);
+}
+
+.sidebar {
+    width: 40%;
+    height: 100vh;
+    background-image: url('/public/logo/logo.png'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Form */
+.login-box {
+    background: rgba(0, 0, 0, 0.6); /* Sfondo trasparente scuro per il form */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.bg-login-custom{
+    background-color: var(--primary-dark);
+}
+.custom-img {
+    object-fit: cover;
+    object-position:right;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.register-btn-custom{
+    color: none;
+    border: 2px solid var(--light-color-purple);
+}
+.register-btn-custom:hover{
+    color: none;
+    border: 2px solid var(--light-color-purple);
+    cursor: pointer;
+}
+
+/* input del form */
+.login-input {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.login-btn-custom{
+    color: white;
+    border: 3px solid var(--light-color-purple);
+    background-color: var(--light-color-purple);
+}
+.login-btn-custom:hover{
+    color: var(--primary-dark);
+    background-color: var(--light-color-purple);
+}
+
+.bg-login-custom h2{
+    color: var(--light-color-purple);
+    font-size: 1.2em;
+}
+
+.bg-login-custom h3{
+    color: var(--light-color-purple);
+    font-size: 1.0em;
+}
+
+
+/* Optional: For small screens, add a white fade effect */
+
+@media (max-width: 767px) {
+    
+    .text-container-login {
+        width: 100vw;
+        max-height: 100vh;
+        text-align: center;
+    }
+    
+}

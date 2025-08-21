@@ -1,0 +1,63 @@
+.bg-gradient-article-detail {
+    background: radial-gradient(at center, var(--light-color-purple) 10%, var(--secondary-dark) 100%);
+}
+
+.bg-article-detail-img {
+    background: url("/public/sfondo/bg-article-detail.png");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.custom-box-carousel-details-article{
+    background-color: rgb(29,53,63, 0.5);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.carousel-section, .details-section {
+    flex: 1 1 100%;
+    min-width: 300px;
+}
+
+.carousel-inner img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.no-image-found-custom, .details-section{
+    flex: 1 1 100%;
+    height: 400px;
+}
+.no-image-found-custom img{
+    object-fit: contain;
+    max-height: 100%;
+    max-width: 100%;
+    background-color: white;
+}
+
+
+/* about-us -- and -- worktithus  -------------------------------------------------------------*/
+.white-box {
+    background-color: white;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 5rem;
+}
+.text-Color{
+    color: #084734;
+}
+/* about-us -- and -- worktithus  -------------------------------------------------------------*/
+
+/*---------------------------------article/create.blade.php---------------------------------*/
+.custom-create {
+    background: rgb(29,53,63);
+    backdrop-filter: blur(10px);
+    padding: 10px 20px;
+    z-index: 10;
+}
+.text-Color-h2{
+    color: rgba(15,128,122,1);
+}
+/*---------------------------------article/create.blade.php---------------------------------*/
